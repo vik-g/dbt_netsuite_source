@@ -1,0 +1,5 @@
+- name: daily
+  schedule: 0 12 * * * # This example will run every day at 12:00pm
+  steps:
+     - name: run first sales model
+       command: dbt run --models stg_netsuite.yml
