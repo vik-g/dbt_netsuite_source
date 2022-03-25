@@ -1,4 +1,8 @@
 config-version: 2
+vars:
+    netsuite_database: STAGING
+    netsuite_schema: Netsuite_Prod
+    
 require-dbt-version: [">=1.0.0", "<2.0.0"]
 
 name: 'netsuite_source'
