@@ -1,5 +1,5 @@
    name: daily
     schedule: 0 12 * * *
     steps:
-        name: run first sales model
+        name: run first netsuite transformation
          command: dbt run
