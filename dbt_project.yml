@@ -12,7 +12,7 @@ version: '0.4.1'
 models:
   netsuite_source:
     +materialized: table
-    +schema: netsuite_stg
+    +schema: stg_netsuite
     tmp:
       +materialized: view
 
