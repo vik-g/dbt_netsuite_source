@@ -1,7 +1,7 @@
 jobs:
 
  - name: nightly
-   schedule: 0 0 * * * # This example will run every day at midnight.
+   schedule: 0 0 * * *
    steps:
      - name: run models
         command: dbt run
