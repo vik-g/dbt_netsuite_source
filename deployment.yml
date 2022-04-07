@@ -2,4 +2,4 @@
     schedule: 0 12 * * *
     steps:
         name: run first sales model
-         command: dbt run --models stg_netsuite.yml
+         command: dbt run
