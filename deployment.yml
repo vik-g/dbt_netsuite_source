@@ -1,7 +1,7 @@
-jobs:
+  jobs:
 
- - name: nightly
-   schedule: 0 0 * * *
-   steps:
-     - name: run models
-        command: dbt run
+   - name: nightly
+     schedule: 0 0 * * *
+     steps:
+       - name: run models
+         command: dbt run
