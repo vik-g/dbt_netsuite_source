@@ -3,7 +3,7 @@ version: 2
 
 sources:
   - name: netsuite
-    schema: "{{ var('netsuite_schema', 'netsuite') }}" # you will need to customize if your schema name is not netsuite
+    schema: "{{ var('netsuite_schema', 'NETSUITE_PROD') }}" # you will need to customize if your schema name is not netsuite
     database: "{{ var('netsuite_database', target.database) }}"
     loader: fivetran
     loaded_at_field: _fivetran_synced
