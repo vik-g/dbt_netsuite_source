@@ -1,5 +1,7 @@
-name: daily
-schedule: 0 12 * * *
-steps:
-  name: run first netsuite model
-  command: dbt run
+jobs:
+
+ - name: nightly
+   schedule: 0 0 * * * # This example will run every day at midnight.
+   steps:
+     - name: run models
+        command: dbt run
